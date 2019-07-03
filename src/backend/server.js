@@ -1,14 +1,22 @@
 const app = require("express")();
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
-const config = require("./config");
+const { url } = require("./config/config");
+const router = require("./routes/index");
 const { Article, User, Comment, Vote } = require("./model/Article");
+require("dotenv").config();
+const PORT = 3000 || process.env.PORT;
+
+console.log("node env", process.env.NODE_ENV);
+console.log("node port", process.env.PORT);
+
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+app.use(router);
 
 mongoose.set("useCreateIndex", true);
 mongoose
-  .connect(config.url, { useNewUrlParser: true })
+  .connect(url, { useNewUrlParser: true })
   .then(() => console.log("successfully"))
   .catch(err => console.log(err.message));
 
@@ -166,4 +174,4 @@ async function deleteAllArticlesOfUser() {
   }
 }
 
-deleteAllArticlesOfUser();
+app.listen(3000, console.log(`listening on port ${PORT}`));

@@ -445,7 +445,7 @@ async@2.6.2, async@^2.5.0:
   dependencies:
     lodash "^4.17.11"
 
-async@^1.5.2:
+async@^1.5.0, async@^1.5.2:
   version "1.5.2"
   resolved "https://registry.yarnpkg.com/async/-/async-1.5.2.tgz#ec6a61ae56480c0c3cb241c95618e20892f9672a"
   integrity sha1-7GphrlZIDAw8skHJVhjiCJL5Zyo=
@@ -1581,6 +1581,21 @@ expand-tilde@^2.0.0, expand-tilde@^2.0.2:
   dependencies:
     homedir-polyfill "^1.0.1"
 
+express-jwt@^5.3.1:
+  version "5.3.1"
+  resolved "https://registry.yarnpkg.com/express-jwt/-/express-jwt-5.3.1.tgz#66f05c7dddb5409c037346a98b88965bb10ea4ae"
+  integrity sha512-1C9RNq0wMp/JvsH/qZMlg3SIPvKu14YkZ4YYv7gJQ1Vq+Dv8LH9tLKenS5vMNth45gTlEUGx+ycp9IHIlaHP/g==
+  dependencies:
+    async "^1.5.0"
+    express-unless "^0.3.0"
+    jsonwebtoken "^8.1.0"
+    lodash.set "^4.0.0"
+
+express-unless@^0.3.0:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/express-unless/-/express-unless-0.3.1.tgz#2557c146e75beb903e2d247f9b5ba01452696e20"
+  integrity sha1-JVfBRudb65A+LSR/m1ugFFJpbiA=
+
 express@^4.17.1:
   version "4.17.1"
   resolved "https://registry.yarnpkg.com/express/-/express-4.17.1.tgz#4491fc38605cf51f8629d39c2b5d026f98a4c134"
@@ -2501,6 +2516,11 @@ isomorphic-fetch@^2.1.1:
     node-fetch "^1.0.1"
     whatwg-fetch ">=0.10.0"
 
+joi-objectid@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/joi-objectid/-/joi-objectid-2.0.0.tgz#56549573a66ba795dcf6b9e226de5f3b2d36ec3a"
+  integrity sha1-VlSVc6Zrp5Xc9rniJt5fOy027Do=
+
 "js-tokens@^3.0.0 || ^4.0.0":
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
@@ -2533,7 +2553,7 @@ json5@^1.0.1:
   dependencies:
     minimist "^1.2.0"
 
-jsonwebtoken@^8.5.1:
+jsonwebtoken@^8.1.0, jsonwebtoken@^8.5.1:
   version "8.5.1"
   resolved "https://registry.yarnpkg.com/jsonwebtoken/-/jsonwebtoken-8.5.1.tgz#00e71e0b8df54c2121a1f26137df2280673bcc0d"
   integrity sha512-XjwVfRS6jTMsqYs0EsuJ4LGxXV14zQybNd4L2r0UvbVnSF9Af8x7p5MzbJ90Ioz/9TI41/hTCvznF/loiSzn8w==
@@ -2644,6 +2664,16 @@ lodash-es@^4.17.11:
   resolved "https://registry.yarnpkg.com/lodash-es/-/lodash-es-4.17.11.tgz#145ab4a7ac5c5e52a3531fb4f310255a152b4be0"
   integrity sha512-DHb1ub+rMjjrxqlB3H56/6MXtm1lSksDp2rA2cNWjG8mlDUYFhUj3Di2Zn5IwSU87xLv8tNIQ7sSwE/YOX/D/Q==
 
+lodash.foreach@^4.1.0:
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/lodash.foreach/-/lodash.foreach-4.5.0.tgz#1a6a35eace401280c7f06dddec35165ab27e3e53"
+  integrity sha1-Gmo16s5AEoDH8G3d7DUWWrJ+PlM=
+
+lodash.get@^4.0.2:
+  version "4.4.2"
+  resolved "https://registry.yarnpkg.com/lodash.get/-/lodash.get-4.4.2.tgz#2d177f652fa31e939b4438d5341499dfa3825e99"
+  integrity sha1-LRd/ZS+jHpObRDjVNBSZ36OCXpk=
+
 lodash.includes@^4.3.0:
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/lodash.includes/-/lodash.includes-4.3.0.tgz#60bb98a87cb923c68ca1e51325483314849f553f"
@@ -2678,6 +2708,11 @@ lodash.once@^4.0.0:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/lodash.once/-/lodash.once-4.1.1.tgz#0dd3971213c7c56df880977d504c88fb471a97ac"
   integrity sha1-DdOXEhPHxW34gJd9UEyI+0cal6w=
+
+lodash.set@^4.0.0:
+  version "4.3.2"
+  resolved "https://registry.yarnpkg.com/lodash.set/-/lodash.set-4.3.2.tgz#d8757b1da807dde24816b0d6a84bea1a76230b23"
+  integrity sha1-2HV7HagH3eJIFrDWqEvqGnYjCyM=
 
 lodash@^4.17.11, lodash@^4.17.3, lodash@^4.17.5:
   version "4.17.11"
@@ -2960,6 +2995,14 @@ mongoose-legacy-pluralize@1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/mongoose-legacy-pluralize/-/mongoose-legacy-pluralize-1.0.2.tgz#3ba9f91fa507b5186d399fb40854bff18fb563e4"
   integrity sha512-Yo/7qQU4/EyIS8YDFSeenIvXxZN+ld7YdV9LqFVQJzTLye8unujAWPZ4NWKfFA+RNjh+wvTWKY9Z3E5XM6ZZiQ==
+
+mongoose-unique-validator@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/mongoose-unique-validator/-/mongoose-unique-validator-2.0.3.tgz#247adbcda391bf5bc63fc3dcd43286a9ec833fa4"
+  integrity sha512-3/8pmvAC1acBZS6eWKAWQUiZBlARE1wyWtjga4iQ2wDJeOfRlIKmAvTNHSZXKaAf7RCRUd7wh7as6yWAOrjpQg==
+  dependencies:
+    lodash.foreach "^4.1.0"
+    lodash.get "^4.0.2"
 
 mongoose@^5.6.1:
   version "5.6.1"
@@ -3434,6 +3477,26 @@ pascalcase@^0.1.1:
   resolved "https://registry.yarnpkg.com/pascalcase/-/pascalcase-0.1.1.tgz#b363e55e8006ca6fe21784d2db22bd15d7917f14"
   integrity sha1-s2PlXoAGym/iF4TS2yK9FdeRfxQ=
 
+passport-local@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/passport-local/-/passport-local-1.0.0.tgz#1fe63268c92e75606626437e3b906662c15ba6ee"
+  integrity sha1-H+YyaMkudWBmJkN+O5BmYsFbpu4=
+  dependencies:
+    passport-strategy "1.x.x"
+
+passport-strategy@1.x.x:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/passport-strategy/-/passport-strategy-1.0.0.tgz#b5539aa8fc225a3d1ad179476ddf236b440f52e4"
+  integrity sha1-tVOaqPwiWj0a0XlHbd8ja0QPUuQ=
+
+passport@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/passport/-/passport-0.4.0.tgz#c5095691347bd5ad3b5e180238c3914d16f05811"
+  integrity sha1-xQlWkTR71a07XhgCOMORTRbwWBE=
+  dependencies:
+    passport-strategy "1.x.x"
+    pause "0.0.1"
+
 path-browserify@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/path-browserify/-/path-browserify-0.0.1.tgz#e6c4ddd7ed3aa27c68a20cc4e50e1a4ee83bbc4a"
@@ -3475,6 +3538,11 @@ path-to-regexp@^1.7.0:
   integrity sha1-Wf3g9DW62suhA6hOnTvGTpa5k30=
   dependencies:
     isarray "0.0.1"
+
+pause@0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/pause/-/pause-0.0.1.tgz#1d408b3fdb76923b9543d96fb4c9dfd535d9cb5d"
+  integrity sha1-HUCLP9t2kjuVQ9lvtMnf1TXZy10=
 
 pbkdf2@^3.0.3:
   version "3.0.17"
@@ -4169,6 +4237,13 @@ sliced@1.0.1:
   resolved "https://registry.yarnpkg.com/sliced/-/sliced-1.0.1.tgz#0b3a662b5d04c3177b1926bea82b03f837a2ef41"
   integrity sha1-CzpmK10Ewxd7GSa+qCsD+Dei70E=
 
+slug@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/slug/-/slug-1.1.0.tgz#73eef5710416f515077bdf70c683bde4915913c9"
+  integrity sha512-NuIOjDQeTMPm+/AUIHJ5636mF3jOsYLFnoEErl9Tdpt4kpt4fOrAJxscH9mUgX1LtPaEqgPCawBg7A4yhoSWRg==
+  dependencies:
+    unicode ">= 0.3.1"
+
 snapdragon-node@^2.0.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/snapdragon-node/-/snapdragon-node-2.1.1.tgz#6c175f86ff14bdb0724563e8f3c1b021a286853b"
@@ -4616,6 +4691,11 @@ uglify-js@3.4.x:
   dependencies:
     commander "~2.19.0"
     source-map "~0.6.1"
+
+"unicode@>= 0.3.1":
+  version "11.0.1"
+  resolved "https://registry.yarnpkg.com/unicode/-/unicode-11.0.1.tgz#735bd422ec75cf28d396eb224d535d168d5f1db6"
+  integrity sha512-+cHtykLb+eF1yrSLWTwcYBrqJkTfX7Quoyg7Juhe6uylF43ZbMdxMuSHNYlnyLT8T7POAvavgBthzUF9AIaQvQ==
 
 union-value@^1.0.0:
   version "1.0.1"
