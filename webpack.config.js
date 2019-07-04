@@ -18,10 +18,6 @@ const config = {
     proxy: [
       {
         context: ["/api"],
-        target: "http://localhost:8000"
-      },
-      {
-        context: ["/user", "/ticket", "/film", "/schedule"],
         target: "http://localhost:3000"
       }
     ]

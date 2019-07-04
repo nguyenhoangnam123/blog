@@ -112,6 +112,11 @@
     "@types/prop-types" "*"
     csstype "^2.2.0"
 
+"@types/yup@^0.26.20":
+  version "0.26.20"
+  resolved "https://registry.yarnpkg.com/@types/yup/-/yup-0.26.20.tgz#3b85a05f5dd76e2e8475abb6a8aeae7777627143"
+  integrity sha512-LpCsA6NG7vIU7Umv1k4w3YGIBH5ZLZRPEKo8vJLHVbBUqRy2WaJ002kbsRqcwODpkICAOMuyGOqLQJa5isZ8+g==
+
 "@webassemblyjs/ast@1.8.5":
   version "1.8.5"
   resolved "https://registry.yarnpkg.com/@webassemblyjs/ast/-/ast-1.8.5.tgz#51b1c5fe6576a34953bf4b253df9f0d490d9e359"

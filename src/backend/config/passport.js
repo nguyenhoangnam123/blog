@@ -1,6 +1,6 @@
 const passport = require("passport");
 const LocalStrategy = require("passport-local").Strategy;
-const User = require("../model/User");
+const { User } = require("../model/User");
 
 passport.use(
   new LocalStrategy(
@@ -9,9 +9,10 @@ passport.use(
       passwordField: "user[password]"
     },
     function(email, password, done) {
+      console.log("email: ", email);
+      console.log("password: ", password);
       User.findOne({ email })
         .then(function(user) {
-          // console.log(user);
           if (!user || !user.validPassword(password)) {
             return done(null, false, {
               errors: { "email or password": "is invalid" }

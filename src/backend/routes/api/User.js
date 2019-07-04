@@ -3,15 +3,15 @@ const passport = require("../../config/passport");
 const { User, validateUser } = require("../../model/User");
 const auth = require("../auth");
 
-router.post("/user/login", auth.required, async (req, res, next) => {
-  const { email, password } = req.body.user;
-  if (!email) {
-    res.status(400).json({ email: "cannot be blank" });
-  }
-  if (!password) {
-    res.status(400).json({ password: "cannot be blank" });
-  }
+router.post("/user/login", async (req, res, next) => {
   try {
+    const { email, password } = req.body.user;
+    if (!email) {
+      res.status(400).json({ email: "cannot be blank" });
+    }
+    if (!password) {
+      res.status(400).json({ password: "cannot be blank" });
+    }
     passport.authenticate("local", { session: false }, (err, user, info) => {
       if (err) return next(err);
       if (user) {
@@ -49,7 +49,7 @@ router.post("/user/create", async (req, res, next) => {
   }
 });
 
-router.get("/users", async (req, res, next) => {
+router.get("/users", auth.required, async (req, res, next) => {
   try {
     const users = await User.find({});
     if (!users) {
